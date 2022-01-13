@@ -1,6 +1,9 @@
 BESCHREIBUNG:
 -Das Program enthält mehrere Hilfsmodule für InfSys-Aufgaben.
 
+DOWNLOAD:
+-Lade ausschließlich die "InfSysCheatOMat.jar" herunter oder pull dass gesamte Repository und führe die Klasse "Main" aus.
+
 AUSFÜHRUNG:
 -Um mit dem Program über Konsoleneingaben zu interagieren muss über eine Konsole ausgeführt werden.
     -Windows & Linux:
