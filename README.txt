@@ -1,0 +1,14 @@
+BESCHREIBUNG:
+-Das Program enthält mehrere Hilfsmodule für InfSys-Aufgaben.
+
+AUSFÜHRUNG:
+-Um mit dem Program über Konsoleneingaben zu interagieren muss über eine Konsole ausgeführt werden.
+    -Windows & Linux:
+        -Navigiere mit cd zum Speicherort der "InfSysCheatOMat.jar"
+        -Führe den folgenden Befehl aus: java -jar InfSysCheatOMat.jar
+    -MacOS:
+        -Apple ist Schmutz, finds selbst raus.
+
+SICHERHEIT:
+-Das Program ließt und verändert keine Daten auf dem Computer.
+-Der gesamte Source-Code kann offen auf GitHub eingesehen werden. https://github.com/xtay2/InfSysCheatOMat
