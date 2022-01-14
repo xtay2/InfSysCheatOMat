@@ -15,3 +15,6 @@ AUSFÜHRUNG:
 SICHERHEIT:
 -Das Program ließt und verändert keine Daten auf dem Computer.
 -Der gesamte Source-Code kann offen auf GitHub eingesehen werden. https://github.com/xtay2/InfSysCheatOMat
+
+ABHÄNGIGKEITEN:
+-Benötigt mindestens Java 17
