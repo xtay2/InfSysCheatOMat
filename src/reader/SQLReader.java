@@ -162,7 +162,7 @@ public class SQLReader {
 		Set s = new Set(name.replaceAll("\\W", ""));
 		stripLine(1);
 		// Lösche Alias
-		if (!name.endsWith(",") && !fstIs("WHERE") && !fstIs("(SELECT") && !fstIs("NATURAL") && !fstIs("JOIN")) {
+		if (line.length > 0 && !name.endsWith(",") && !fstIs("WHERE") && !fstIs("(SELECT") && !fstIs("NATURAL") && !fstIs("JOIN")) {
 			alias = line[0].strip();
 			stripLine(1);
 			AliasManager.register(name.replaceAll("\\W", ""), alias.replaceAll("\\W", ""));

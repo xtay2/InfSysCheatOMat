@@ -6,7 +6,13 @@ import reader.SQLReader;
 public class Disassembler {
 
 	public enum LanguageType {
-		SQL, REL;
+		SQL("SQL"), REL("RELATIONAL ALGEBRA");
+
+		final String txt;
+
+		LanguageType(String string) {
+			txt = string;
+		}
 
 		public static LanguageType fromString(String s) {
 			return switch (s.toUpperCase()) {
@@ -14,6 +20,11 @@ public class Disassembler {
 			case "REL" -> REL;
 			default -> throw new IllegalArgumentException("Unexpected value: " + s.toUpperCase());
 			};
+		}
+
+		@Override
+		public String toString() {
+			return txt;
 		}
 	}
 

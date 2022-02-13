@@ -7,13 +7,13 @@ import main.Main;
 public class RelConverter {
 
 	public static void init(LanguageType from, LanguageType to) {
-		System.out.println("\nCONVERTER SQL ZU RELATIONALER ALGEBRA");
+		System.out.println("\nCONVERTER " + from + " ZU " + to + ".");
 		String input = Main.readInput("Gib SQL-Anfrage an:");
 
 		String converted = Disassembler.convert(input, from, to);
 		String conBack = Disassembler.convert(converted, to, from);
 
-		System.out.println("Converted: " + converted + "\nAccuracy: " + accuracy(input, conBack) + "%");
+		System.out.println("Converted: " + converted + "\nAccuracy: " + accuracy(input, conBack) + "%\n");
 	}
 
 	private static int accuracy(String s1, String s2) {
