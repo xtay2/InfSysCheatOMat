@@ -1,4 +1,4 @@
-##INFO
+## INFO
 - In [diesem Infovideo](https://drive.google.com/file/d/1RIm-EiEYk0SVCxVFVdUcVxrXPppD7LN7/view?usp=sharing) erkläre ich die Benutzung.
 
 ### BESCHREIBUNG:
