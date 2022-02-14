@@ -13,12 +13,12 @@ public class RelConverter {
 		String converted = Disassembler.convert(input, from, to);
 		String conBack = Disassembler.convert(converted, to, from);
 
-		System.out.println("Converted: " + converted + "\nAccuracy: " + accuracy(input, conBack) + "%\n");
+		System.out.println("\nConverted: " + converted + "\nAccuracy: " + accuracy(input, conBack) + "%\n");
 	}
 
 	private static int accuracy(String s1, String s2) {
-		s1 = Disassembler.removeUmlaut(s1.replaceAll("[ |_]", ""));
-		s2 = Disassembler.removeUmlaut(s2.replaceAll("[ |_]", ""));
+		s1 = Disassembler.removeUmlaut(s1.replaceAll("[ |_|(DISTINCT)]", ""));
+		s2 = Disassembler.removeUmlaut(s2.replaceAll("[ |_|(DISTINCT)]", ""));
 		return (int) Math.round(100 * similarity(s1, s2));
 	}
 
